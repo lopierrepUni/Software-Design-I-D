@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>OneSchool &mdash; Website by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<head>
+  <title>OneSchool &mdash; Website by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./myjs/main.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -38,10 +44,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
-    
+
+
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-      
+
       <div class="container-fluid">
         <div class="d-flex align-items-center">
           <div class="site-logo mr-auto w-25"><a href="index.html">IMPREMUNDO 3D</a></div>
@@ -50,9 +56,9 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#home-section" class="nav-link">Inicio</a></li>
-                <li><a href="#courses-section" class="nav-link">Productos</a></li>             
+                <li><a href="#courses-section" class="nav-link">Productos</a></li>
                 <li><a href="#teachers-section" class="nav-link">Testimonios</a></li>
-                
+
               </ul>
             </nav>
           </div>
@@ -63,57 +69,103 @@
                 <li class="cta"><a href="#contact-section" class="nav-link"><span>Contactanos</span></a></li>
               </ul>
             </nav>
-            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span
+                class="icon-menu h3"></span></a>
           </div>
         </div>
       </div>
-      
+
     </header>
 
-      <div class="intro-section" id="home-section">
-        
-        <div class="slide-1" style="background-image: url('images/hero_1.jpg');" data-stellar-background-ratio="0.5">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-12">
-                <div class="row align-items-center">
-                  <div class="col-lg-6 mb-4">
-                    <h1  data-aos="fade-up" >Compra lo mejor en impresoras 3D</h1>
-                    <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">Consigue las mejores impresoras 3D con asesoria y acompañamiento incluido</p>
-                    
-
-                  </div>
-
-                  <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
-                    <form action="" method="post" class="form-box">
-                  
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Correo">
-                      </div>
-                      <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Contraseña">
-                      </div>
-                    
-                      <div class="form-group">
-                          <div class="row justify-content-center">
-                            
-                              <button class="customPrevBtn btn btn-primary m-1">Conectarse</button>
-                              <button class="customNextBtn btn btn-primary m-1">Registrarse</button>
-                            </div>
-                      </div>
-                    </form>
-
-                  </div>
-                  
-                </div>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form id = "createUser">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Correo Electronico</label>
+                <input type="email" class="form-control"  aria-describedby="emailHelp" placeholder="Ingrese su correo" name = "correo">
+                <small id="emailHelp" class="form-text text-muted">Nunca lo compartiremos con nadie más</small>
               </div>
-              
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" placeholder="Ingrese su contraseña" name = pass>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Nombre</label>
+                <input type="text" class="form-control"  placeholder="Ingrese su nombre" name="nombre">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Dirección</label>
+                <input type="text" class="form-control" placeholder="Ingrese su dirección" name = "direccion">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Telefono</label>
+                <input type="text" class="form-control" placeholder="Ingrese su telefono" name = "telefono">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+    
+    <div class="intro-section" id="home-section">
+      <div class="slide-1" style="background-image: url('images/hero_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                  <h1 data-aos="fade-up">Compra lo mejor en impresoras 3D</h1>
+                  <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Consigue las mejores impresoras 3D con
+                    asesoria y acompañamiento incluido</p>
+
+
+                </div>
+
+                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
+                  <form id = "loginUser" class="form-box">
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="row justify-content-center">
+                        <button class="customPrevBtn btn btn-primary m-1">Conectarse</button>
+                        <button type="button" class="customNextBtn btn btn-primary m-1" data-toggle="modal" data-target="#myModal">Registrarse</button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+
+              </div>
             </div>
+
           </div>
         </div>
       </div>
+    </div>
+
 
     
+
+
     <div class="site-section courses-title" id="courses-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
@@ -123,7 +175,7 @@
         </div>
       </div>
     </div>
-    <div class="site-section courses-entry-wrap"  data-aos="fade-up" data-aos-delay="100">
+    <div class="site-section courses-entry-wrap" data-aos="fade-up" data-aos-delay="100">
       <div class="container">
         <div class="row">
 
@@ -131,7 +183,8 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course-single.html"><img src="images/Anycubic I3 1.610.000.jpg" alt="Image" style="width:70%" class="img-fluid"></a>
+                <a href="course-single.html"><img src="images/Anycubic I3 1.610.000.jpg" alt="Image" style="width:70%"
+                    class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$1.610.000</span>
@@ -140,7 +193,7 @@
                   <li type="disc">Cama caliente “ultrabase”</li>
                   <li type="disc">Piezas de repuesto incluidas</li>
                   <li type="disc">Sensor de filamento</li>
-                  <li type="disc">Reanudación después de un corte de electricidad</li>           
+                  <li type="disc">Reanudación después de un corte de electricidad</li>
                 </ul>
               </div>
               <div class="d-flex border-top stats">
@@ -151,16 +204,16 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course-single.html"><img src="images/Anet A8 900.000.jpg" alt="Image"  class="img-fluid"></a>
+                <a href="course-single.html"><img src="images/Anet A8 900.000.jpg" alt="Image" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$900.000</span>
-               
+
                 <h3><a href="#">Anet A8</a></h3>
                 <ul>
                   <li type="disc">Pantalla LCD 2004</li>
                   <li type="disc">5 teclas para una fácil operación</li>
-                  <li type="disc">Admite tarjeta SD e impresión fuera de línea</li>           
+                  <li type="disc">Admite tarjeta SD e impresión fuera de línea</li>
                 </ul>
               </div>
               <div class="d-flex border-top stats">
@@ -172,16 +225,17 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course-single.html"><img src="images/Ender 3 Creality 1.360.000.jpg" alt="Image"style="width:95%" class="img-fluid"></a>
+                <a href="course-single.html"><img src="images/Ender 3 Creality 1.360.000.jpg" alt="Image"
+                    style="width:95%" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$1.360.000</span>
-                
+
                 <h3><a href="#">Ender 3 Creality</a></h3>
                 <ul>
-                  <li type="disc">Cama  cubierta con BuildTak4</li>
+                  <li type="disc">Cama cubierta con BuildTak4</li>
                   <li type="disc">Pantalla LCD con un control circular </li>
-                  <li type="disc">Reanudación después de un corte de electricidad</li>           
+                  <li type="disc">Reanudación después de un corte de electricidad</li>
                 </ul>
               </div>
               <div class="d-flex border-top stats">
@@ -194,16 +248,17 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course-single.html"><img src="images/Geeetech A10m 2019.jpg" alt="Image"style="width:70%" class="img-fluid"></a>
+                <a href="course-single.html"><img src="images/Geeetech A10m 2019.jpg" alt="Image" style="width:70%"
+                    class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$1.500.000</span>
-               
+
                 <h3><a href="#">Geeetech A10m 2019</a></h3>
                 <ul>
                   <li type="disc">Doble extrusión </li>
                   <li type="disc">Ventilación de 360 grados</li>
-                  <li type="disc">Excelente disipación de calor, reduciendo el riesgo de obstrucción o fugas </li>           
+                  <li type="disc">Excelente disipación de calor, reduciendo el riesgo de obstrucción o fugas </li>
                 </ul>
               </div>
               <div class="d-flex border-top stats">
@@ -214,16 +269,17 @@
 
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course-single.html"><img src="images/Anycubic Photon Uv 1.790.000.jpg" alt="Image" style="width:65%"class="img-fluid"></a>
+                <a href="course-single.html"><img src="images/Anycubic Photon Uv 1.790.000.jpg" alt="Image"
+                    style="width:65%" class="img-fluid"></a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$1.790.000</span>
-                
+
                 <h3><a href="#">Anycubic Photon Uv</a></h3>
                 <ul>
                   <li type="disc">Pantalla de enmascaramiento LCD 2K </li>
-                  
-                  <li type="disc">Función de proceso de impresión en tiempo real está disponible ahora. </li>           
+
+                  <li type="disc">Función de proceso de impresión en tiempo real está disponible ahora. </li>
                 </ul>
               </div>
               <div class="d-flex border-top stats">
@@ -232,37 +288,37 @@
               </div>
             </div>
 
-     
+
 
           </div>
 
-         
+
 
         </div>
         <div class="row justify-content-center">
           <div class="col-7 text-center">
             <button class="customPrevBtn btn btn-primary m-1">Anterior</button>
             <button class="customNextBtn btn btn-primary m-1">Siguiente</button>
-<a href="/Catalogo.html">
-  <button class="customNextBtn btn btn-primary m-1"></buttonclass>Ver mas productos</button>
-</a>
+            <a href="./Catalogo.html">
+              <button class="customNextBtn btn btn-primary m-1"></buttonclass>Ver mas productos</button>
+            </a>
 
-            
+
           </div>
         </div>
       </div>
     </div>
 
 
-   
+
 
     <div class="site-section" id="teachers-section">
       <div class="container">
 
         <div class="row mb-5 justify-content-center">
-          <div class="col-lg-7 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
+          <div class="col-lg-7 mb-5 text-center" data-aos="fade-up" data-aos-delay="">
             <h2 class="section-title">Experiencias de Usuario</h2>
-               </div>
+          </div>
         </div>
 
         <div class="row">
@@ -307,7 +363,7 @@
 
 
 
-    
+
 
 
 
@@ -318,10 +374,11 @@
           <div class="col-md-7">
 
 
-            
+
             <h2 class="section-title mb-3">Contactenos</h2>
-            <p class="mb-5">Queremos hablar contigo! Dinos tus inquietudes, opiniones y sugerencias. Te respondemos en menos de 24 horas.</p>
-          
+            <p class="mb-5">Queremos hablar contigo! Dinos tus inquietudes, opiniones y sugerencias. Te respondemos en
+              menos de 24 horas.</p>
+
             <form method="post" data-aos="fade">
               <div class="form-group row">
                 <div class="col-md-6 mb-3 mb-lg-0">
@@ -345,13 +402,14 @@
               </div>
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="¿Qué nos quieres contar?"></textarea>
+                  <textarea class="form-control" id="" cols="30" rows="10"
+                    placeholder="¿Qué nos quieres contar?"></textarea>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-6">
-                  
+
                   <input type="submit" class="btn btn-primary py-3 px-5 btn-block btn-pill" value="Enviar">
                 </div>
               </div>
@@ -361,14 +419,15 @@
         </div>
       </div>
     </div>
-    
-     
+
+
     <footer class="footer-section bg-white">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <h3>Sobre Impremudno 3D</h3>
-            <p>Nuestro objetivo es ofrecer un servicio de venta y entrega facil y rapida de impresoras 3D para personas no muy cercanas a esta tecnologia.</p>
+            <p>Nuestro objetivo es ofrecer un servicio de venta y entrega facil y rapida de impresoras 3D para personas
+              no muy cercanas a esta tecnologia.</p>
           </div>
 
           <div class="col-md-3 ml-auto">
@@ -383,7 +442,8 @@
 
           <div class="col-md-4">
             <h3>Subscribirse</h3>
-            <p>¿Te gustaria recibir nuestros ultimos productos y ofertas al instante? Subscribete para no perderte de nada</p>
+            <p>¿Te gustaria recibir nuestros ultimos productos y ofertas al instante? Subscribete para no perderte de
+              nada</p>
             <form action="#" class="footer-subscribe">
               <div class="d-flex mb-5">
                 <input type="text" class="form-control rounded-0" placeholder="Correo">
@@ -397,20 +457,23 @@
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
-            <p>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+                with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                  target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
             </div>
           </div>
-          
+
         </div>
       </div>
     </footer>
 
-  
-    
+
+
   </div> <!-- .site-wrap -->
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -427,8 +490,9 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.sticky.js"></script>
 
-  
+
   <script src="js/main.js"></script>
-    
-  </body>
+
+</body>
+
 </html>
