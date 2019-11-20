@@ -25,11 +25,27 @@ $( document ).ready(function() {
     
     
         ajaxRequest.done(function (response, textStatus, jqXHR){
+            response = JSON.parse(response);
             console.log(response);
-            $('#myModal').modal('toggle'); 
+            if(!response.Conn){
+                alert('Intente de nuevo más tarde');
+            }else{
+                if(response.Rep){
+                    alert('El usuario ya existe');
+                }else{
+                    if(response.Create){
+                        alert('El usuario se creó correctamente');
+                        $('#myModal').modal('toggle'); 
+                    }else{
+                        alert('Hubo un error al crear el usuario intente de nuevo');
+                    }
+                }
+            }
+            
         });
     
         ajaxRequest.fail(function (){
+            alert('Intentelo denuevo más tarde');
         });
 
     });

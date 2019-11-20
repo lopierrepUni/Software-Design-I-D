@@ -1,12 +1,13 @@
 <?php
+    $response = array();
     $conn = mysqli_connect('localhost','root','','compumundo3d');
     if(!$conn)
     {
-        echo "No se ha podido conectar PHP - MySQL, verifique sus datos.";
+        $response["Conn"] = false;
     }
     else
     {
-        echo "Conexion Exitosa PHP - MySQL";
+        $response["Conn"] = true;
 
         $query = $_POST['querySelect'];
         $queryCreate = $_POST['queryInsert'];
@@ -14,15 +15,18 @@
         $result = $conn->query($query);
 
         if ($result->num_rows > 0) {
-            echo "Ya existe el usuario";
+            $response["Rep"] = true;
         } else {
+            $response["Rep"] = false;
             if ($conn->query($queryCreate) === TRUE) {
-                echo "Se ha creado el nuevo usuario exitosamente";
+                $response["Create"] = true;
             } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                $response["Create"] = false;
             }
         }
     }
+
+    echo json_encode($response);
 
     
 
