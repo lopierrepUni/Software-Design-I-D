@@ -86,6 +86,47 @@
 
     </header>
 
+
+    <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id = "precioModal"></h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form id = "pay" action="">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Número de tarjeta</label>
+                      <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Ingrese su número de tarjeta">
+                      <small id="emailHelp" class="form-text text-muted">Nunca la compartiremos con nadie más</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Nombre del titular</label>
+                      <input type="text" class="form-control"  placeholder="Ingrese el nombre del titular" name="nombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Dirección</label>
+                      <input type="text" class="form-control" placeholder="Ingrese dirección de entrega" name = "direccion de entrega">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Digitos de seguridad</label>
+                      <input type="text" class="form-control" placeholder="Ingrese los digitos de seguridad">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pagar</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+
+
+
+
     <div class="intro-section" id="home-section">
         <br>
         <br>
@@ -115,7 +156,7 @@
                             </a>
                         </div>
                         <h5 class="text-center">Anet A8 </h5>
-                        <h5 class="text-center">$900.000</h5>
+                        <h5 class="text-center">900.000</h5>
                         <a href="#" class="btn buy" onclick="agregarAlCarrito('Anet A8')">Comprar</a>
                     </div>
                     <!-- ./Product -->
