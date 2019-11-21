@@ -10,19 +10,13 @@
         $response["Conn"] = true;
 
         $query = $_POST['querySelect'];
-        $queryCreate = $_POST['queryInsert'];
 
         $result = $conn->query($query);
 
         if ($result->num_rows > 0) {
-            $response["Rep"] = true;
+            $response["login"] = true;
         } else {
-            $response["Rep"] = false;
-            if ($conn->query($queryCreate) === TRUE) {
-                $response["Create"] = true;
-            } else {
-                $response["Create"] = false;
-            }
+            $response["login"] = false;
         }
     }
 
